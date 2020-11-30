@@ -1,0 +1,272 @@
+.btn-phonecall {
+    border-radius: 50%;
+    background-color: #1C7589;
+    padding: 8px 25px 8px 8px !important;
+    opacity: 1;
+    font-size: 18px !important;
+    color: #fff;
+}
+
+.btn-contact-subs {
+    padding: 8px 25px 8px 25px !important;
+    border-radius: 50px !important;
+    background: #681D49 !important;
+    color: #fff !important;
+    font-size: 15px;
+}
+
+.btn-mute {
+    padding: 8px 25px 8px 25px !important;
+    border-radius: 50px !important;
+    background: #1C7589 !important;
+    color: #fff !important;
+    font-size: 15px;
+}
+
+.top-menu li {
+    margin-right: 10px;
+}
+
+.top-menu li a:hover {
+    color: #1c7589!important;
+    background-color: #ccc!important;
+    border-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+}
+
+.brand-title {
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0 25px 0 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .custom-logo-link img {
+        margin-left: 7px;
+    }
+
+    .brand-title {
+        margin: 0;
+        padding: 20px 0 20px 0;
+    }
+
+    .logo {
+        margin-left: 13px;
+    }
+
+    .navbar-links {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 3px 10px !important;
+        padding: .5rem 1rem;
+        margin: .05rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .top-menu {
+        background: #F6F4F0;
+        padding: 10px
+    }
+}
+/* End of Primary Menu */
+
+/* ******************** */
+
+/* Secondary Menu */
+.nav-tabs .nav-link {
+    border: 0;
+    color: #fff;
+    background: #57183D;
+    margin: 5px;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.secondary-menu {
+    background: #681D49;
+    padding: 18px 13px 18px 13px;
+    font-size: 13px;
+}
+
+/* .secondary-menu .nav-links1 {
+    margin-left: 25px;
+} */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    margin-right: 1.5rem;
+    border-radius: 8px;
+    padding: 3px 10px 3px 10px;
+}
+
+.toggle-button {
+    /* color: blue; */
+    cursor: pointer;
+    position: absolute;
+    top: -0.7rem;
+    right: 0rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links1 {
+        display: none;
+    }
+
+    .secondary-menu {
+        padding: 25px 13px;
+    }
+
+    .navbar1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links1 ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: .8rem;
+        text-align: center;
+    }
+
+    .navbar-links1 li a {
+        padding: .5rem 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .navbar-links1.active {
+        display: flex;
+    }
+
+}
+
+/* phone call hover slide */
+.slide-left {
+    position: relative;
+    width: 10%;
+}
+    
+.fa-phone {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.font-call {
+    font-family: 'Open Sans', sans-serif;
+}
+    
+.overlay {
+    position: absolute;
+    bottom: 2px;
+    right: 29px !important;
+    background-color: #1C7589;
+    overflow: hidden;
+    height: 90%;
+    transition: width 2s;
+    transition-timing-function: linear;
+    border-radius: 10px 0px 0px 10px;
+}
+    
+.slide-left:hover .overlay {
+    width: 250px;
+    /* right: 0; */
+    /* z-index: 1; */
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+    
+.text {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    right: -39%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 992px) { 
+    .slide-left:hover .overlay {
+        width: 0;
+        right: 0;
+    }
+}
+
+/* modal when page load */
+.btn-primary {
+    color: #fff;
+    background-color: #681d49;
+    border-color: #681d49;
+}
+
+.btn-primary:hover {
+    background-color: #212529;
+    text-decoration: none;
+}
+
+#myModal {
+    margin-top: 14rem !important;
+}

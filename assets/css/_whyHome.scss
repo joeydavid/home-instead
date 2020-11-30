@@ -1,0 +1,92 @@
+/* Start of Third tab Why Home Instead */
+
+.why-home-bg {
+    background-image: url("../images/why-home.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.third-tab .content-right-3rd-tab {
+    background-color: #672349;
+    border-radius: 15px 0 0 15px;
+}
+
+.p-3rd-tab {
+    text-shadow: 2px 2px #000000;
+}
+
+.third-tab .cr-btm {
+    letter-spacing: 1px;
+}
+
+@media (max-width: 575.98px) {
+    .why-home-bg {
+        background-image: url(../images/why-home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 13rem;
+        padding-bottom: 16rem;
+        margin-top: -22px;
+    }
+    
+    .third-tab {
+        position: relative;
+    }
+
+    .third-tab .content-right-3rd-tab {
+        position: absolute;
+        top: 16rem;
+        border-radius: 0;
+    }
+
+    .h1-3rd-tab {
+        position: absolute;
+        font-size: 29px;
+        top: 4rem;
+        left: 2.4rem;
+    }
+
+    .p-3rd-tab {
+        position: absolute;
+        top: 10rem;
+        left: 2.4rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .why-home-bg {
+        background-image: url(../images/why-home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 21rem;
+        padding-bottom: 0rem;
+    }
+    
+    .third-tab {
+        position: relative;
+    }
+
+    .third-tab .content-right-3rd-tab {
+        position: absolute;
+        top: 0rem;
+        border-radius: 0;
+    }
+
+    .h1-3rd-tab {
+        position: absolute;
+        font-size: 37px;
+        top: -10rem;
+        left: 2.4rem;
+    }
+
+    .p-3rd-tab {
+        position: absolute;
+        top: -4.5rem;
+        left: 2.4rem;
+    }
+}
+/* End of Third tab Why Home Instead */

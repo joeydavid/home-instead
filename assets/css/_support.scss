@@ -1,0 +1,155 @@
+/* Start of Fourth tab Support when you need it */
+
+.support-bg {
+    background-image: url("../images/support.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.custom-p {
+    text-shadow: 2px 2px #000000;
+}
+
+.btn-left-content {
+    background: #fff;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #000000 !important;
+    padding: 2px 10px;
+    font-weight: bolder;
+}
+
+.first-content {
+    background-color: #672349;
+    border-radius: 15px 0 0 15px;
+    padding: 15px 35px 15px 40px;
+}
+
+.second-content {
+    background-color: #2E7E90;
+    border-radius: 15px 0 0 15px;
+    padding-right: 50px;
+}
+
+@media (max-width: 576px) {
+    .support-bg {
+        padding-top: 25rem;
+    }
+    .fourth-tab {
+        position: relative;
+    }
+
+    .fourth-tab .h1-4th-tab {
+        position: absolute;
+        font-size: 26px;
+        top: -12rem;
+        left: 9rem;
+    }
+
+    .fourth-tab .custom-p {
+        position: absolute;
+        font-size: 17px;
+        left: 9rem;
+        top: -6.5rem;
+    }
+
+    .fourth-tab .btn-left-content {
+        position: absolute;
+        font-size: 12px;
+        top: -1.5rem;
+        left: 9rem;
+        padding: 0 10px;
+    }
+
+    .fourth-tab .first-content {
+        position: absolute;
+        top: 7rem;
+        border-radius: 0;
+        padding-bottom: 3rem;
+    }
+
+    .fourth-tab .second-content {
+        position: absolute;
+        top: 15.5rem;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .support-bg {
+        padding-top: 25rem;
+    }
+    .fourth-tab {
+        position: relative;
+    }
+
+    .fourth-tab .h1-4th-tab {
+        position: absolute;
+        top: -12rem;
+        left: 17rem;
+        font-size: 37px;
+    }
+
+    .fourth-tab .custom-p {
+        position: absolute;
+        top: -3rem;
+        left: 17rem;
+    }
+
+    .fourth-tab .btn-left-content {
+        position: absolute;
+        top: 3rem;
+        left: 17rem;
+    }
+
+    .fourth-tab .first-content {
+        position: absolute;
+        top: 7rem;
+        border-radius: 0px;
+    }
+
+    .fourth-tab .second-content {
+        position: absolute;
+        top: 12.9rem;
+        border-radius: 0px;
+    }
+}
+/* End of Fourth tab Support when you need it */
+
+.bg-modal {
+    background-image: url("../images/Home1.png");
+    background: -webkit-gradient(linear,left bottom,left top,from(rgba(87,24,61,.678431)),to(rgba(87,24,61,.839216))),url("../images/Home1.png")!important;
+}
+
+.carousel-inner {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 50px;
+    padding: 4rem 11rem;
+    font-size: 25px;
+}
+
+.tab4-h1 {
+    margin-top: 17rem;
+    margin-left: 19rem;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: none;
+}
+
+.fa-2x {
+    color: #fff;
+    background: #57183d;
+    border-radius: 50%;
+    padding: 10px 10px !important;
+}
+
+.h1-modal {
+    color: #fff !important;
+    text-shadow: none;
+}

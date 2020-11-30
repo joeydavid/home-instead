@@ -1,0 +1,79 @@
+/* Start of Second tab Your Options */
+
+.your-options-bg {
+    background-image: url("../images/options.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 9rem 0 15rem 0;
+}
+
+.second-tab .content-right-2nd-tab {
+    background-color: #672349;
+    border-radius: 15px 0 0 15px;
+}
+
+.second-tab .cr-btm {
+    letter-spacing: 1px;
+}
+
+.second-tab .p-2nd-tab {
+    text-shadow: 2px 2px #000000;
+}
+
+@media (max-width: 575.98px) {
+    .your-options-bg {
+        background-image: url("../images/options.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: unset;
+        padding: 10rem 0 15rem 0;
+    }
+
+    .second-tab {
+        position: relative;
+    }
+
+    .second-tab .h1-2nd-tab {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        font-size: 38px;
+    }
+
+    .second-tab .p-2nd-tab {
+        position: absolute;
+        top: 7.5rem;
+        left: 2rem;
+        font-size: 17px
+    }
+
+    .second-tab .content-right-2nd-tab {
+        position: absolute;
+        top: 15rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .second-tab {
+        position: relative;
+    }
+
+    .h1-2nd-tab {
+        position: absolute;
+        top: 5rem;
+        left: -3.7rem;
+        font-size: 37px;
+    }
+
+    .p-2nd-tab {
+        position: absolute;
+        top: 8rem;
+        left: -3.7rem;
+    }
+
+    .content-right-2nd-tab {
+        position: absolute;
+        top: 15rem;
+    }
+}
