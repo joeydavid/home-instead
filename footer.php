@@ -1,8 +1,3 @@
-
-<?php
-    wp_footer();
-?>
-
 </div>
 
 <!-- Modal of Welcome Home Tab 1 -->
@@ -74,13 +69,10 @@
 <!-- Modal and Carousel Support when you need it Tab 4 -->
 
 <!-- Show Modal on Page Load -->
-<div class="modal" tabindex="-1" role="dialog" id="myModal">
+<!-- <div class="modal" tabindex="-1" role="dialog" id="myModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content pl-3 mt-5">
       <div class="modal-header">
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button> -->
       </div>
       <div class="modal-body">
         <h4>
@@ -97,8 +89,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- End of Show Modal on Page Load -->
 
+<?php
+    wp_footer();
+?>
 </body>
 </html> 

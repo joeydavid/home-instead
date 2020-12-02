@@ -8,12 +8,6 @@
     padding: 10rem 0 19rem 0;
 }
 
-.first-tab .content-left-btm {
-    margin-bottom: 32px !important;
-    text-shadow: 2px 2px #000000;
-    font-size: 19px;
-}
-
 .first-tab .content-center {
     margin-bottom: 23px;
     margin-left: 60px;
@@ -25,29 +19,11 @@
     padding: 6px;
 }
 
-.info {
-    background-color: #672349;
-    color: #fff;
-    padding: 3px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #fff;
-}
-
-.info:hover {
-    background: #fff;
-    color: #672349;
-}
-
 .first-tab .content-right {
     background-color: #672349;
     border-radius: 15px 0 0 15px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.cr-btm {
-    font-size: 13px;
 }
 
 .modal .close {
@@ -70,24 +46,24 @@
 
 @media (max-width: 575.98px) {
     .welcome-home-bg {
-        padding: 15rem 0 11rem 0rem;
+        padding: 12rem 0 10rem 0;
     }
 
     .first-tab {
         position: relative;
     }
 
-    .content-left-top .h1-1st-tab {
+    .content-left-top h1 {
         font-size: 38px;
         position: absolute;
-        top: 0rem;
-        left: 2rem;
+        top: 2.5rem;
+        left: -2rem;
     }
 
-    .content-left-btm .p-1st-tab {
+    .content-left-btm p {
         position: absolute;
-        top: 3rem;
-        left: 2rem;
+        top: 5.5rem;
+        left: -2rem;
         font-size: 17px;
     }
 
@@ -106,31 +82,31 @@
 
     .play-button {
         position: absolute;
-        top: -18.3rem;
-        left: -.8rem;
+        top: -0.6rem;
+        left: -0.6rem;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .welcome-home-bg {
-        padding: 15rem 0 11rem 0rem;
+        padding: 15rem 0 11rem 0;
     }
 
     .first-tab {
         position: relative;
     }
 
-    .content-left-top .h1-1st-tab {
+    .content-left-top h1 {
         font-size: 50px;
         position: absolute;
         top: 1.5rem;
-        left: -5rem;
+        left: -1rem;
     }
 
-    .content-left-btm .p-1st-tab {
+    .content-left-btm p {
         position: absolute;
         top: 6rem;
-        left: -5rem;
+        left: -1rem;
         font-size: 17px;
     }
 
@@ -142,7 +118,7 @@
 
     .content-right {
         position: absolute;
-        top: 13rem;
+        top: 12.5rem;
         border-radius: 0 !important;
         padding-left: 32px;
     }

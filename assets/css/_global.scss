@@ -8,12 +8,22 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+.heading {
     letter-spacing: 1px;
-    font-size: 3rem;
-    text-shadow: 2px 3px #000000;
+    font-size: 4rem;
+    text-shadow: 2px 2px #000000;
 }
 
-p {
-    letter-spacing: 1.5px;
+.sub-heading {
+    text-shadow: 2px 1px #000000;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.main-content {
+    font-size: 20px;
+}
+
+.sub-content {
+    font-size: 15px;
 }

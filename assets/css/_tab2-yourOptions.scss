@@ -17,10 +17,6 @@
     letter-spacing: 1px;
 }
 
-.second-tab .p-2nd-tab {
-    text-shadow: 2px 2px #000000;
-}
-
 @media (max-width: 575.98px) {
     .your-options-bg {
         background-image: url("../images/options.png");
@@ -34,17 +30,17 @@
         position: relative;
     }
 
-    .second-tab .h1-2nd-tab {
+    .second-tab h1 {
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        left: -2rem;
         font-size: 38px;
     }
 
-    .second-tab .p-2nd-tab {
+    .second-tab .ml-5 p {
         position: absolute;
         top: 7.5rem;
-        left: 2rem;
+        left: -2rem;
         font-size: 17px
     }
 
@@ -59,17 +55,18 @@
         position: relative;
     }
 
-    .h1-2nd-tab {
+    .second-tab h1 {
         position: absolute;
-        top: 5rem;
-        left: -3.7rem;
-        font-size: 37px;
+        top: 1rem;
+        left: -2rem;
+        font-size: 50px;
     }
 
-    .p-2nd-tab {
+    .second-tab .ml-5 p {
         position: absolute;
-        top: 8rem;
-        left: -3.7rem;
+        top: 9rem;
+        left: -1.7rem;
+        font-size: 17px;
     }
 
     .content-right-2nd-tab {

@@ -9,49 +9,24 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+.heading {
   letter-spacing: 1px;
-  font-size: 3rem;
-  text-shadow: 2px 3px #000000;
+  font-size: 4rem;
+  text-shadow: 2px 2px #000000;
 }
 
-p {
-  letter-spacing: 1.5px;
+.sub-heading {
+  text-shadow: 2px 1px #000000;
+  font-size: 19px;
+  letter-spacing: 1px;
 }
 
-.btn-phonecall {
-  border-radius: 50%;
-  background-color: #1C7589;
-  padding: 8px 25px 8px 8px !important;
-  opacity: 1;
-  font-size: 18px !important;
-  color: #fff;
+.main-content {
+  font-size: 20px;
 }
 
-.btn-contact-subs {
-  padding: 8px 25px 8px 25px !important;
-  border-radius: 50px !important;
-  background: #681D49 !important;
-  color: #fff !important;
+.sub-content {
   font-size: 15px;
-}
-
-.btn-mute {
-  padding: 8px 25px 8px 25px !important;
-  border-radius: 50px !important;
-  background: #1C7589 !important;
-  color: #fff !important;
-  font-size: 15px;
-}
-
-.top-menu li {
-  margin-right: 10px;
-}
-
-.top-menu li a:hover {
-  color: #1c7589 !important;
-  background-color: #ccc !important;
-  border-color: #fff;
 }
 
 .navbar {
@@ -68,11 +43,38 @@ p {
   color: #fff;
 }
 
-.brand-title {
+.navbar__brand-title {
   margin: .5rem;
 }
 
-.navbar-links ul {
+.navbar__btn-phonecall {
+  border-radius: 50%;
+  background-color: #1C7589;
+  padding: 8px 25px 8px 8px !important;
+  opacity: 1;
+  font-size: 18px !important;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar__btn-subs {
+  padding: 8px 25px 8px 25px !important;
+  border-radius: 50px !important;
+  background: #681D49 !important;
+  color: #fff !important;
+  font-size: 15px;
+}
+
+.navbar__btn-mute {
+  padding: 8px 25px 8px 25px !important;
+  border-radius: 50px !important;
+  background: #1C7589 !important;
+  color: #fff !important;
+  font-size: 15px;
+}
+
+.navbar ul {
   margin: 0 25px 0 0;
   padding: 0;
   display: -webkit-box;
@@ -80,16 +82,73 @@ p {
   display: flex;
 }
 
-.navbar-links li {
+.navbar li {
   list-style: none;
+  margin-right: 20px;
 }
 
-.navbar-links li a {
+.navbar li a {
   text-decoration: none;
-  color: #fff;
   padding: 1rem;
   display: block;
   font-size: 12px;
+}
+
+.navbar li a:hover {
+  color: #1c7589 !important;
+  background-color: #ccc !important;
+  border-color: #fff;
+}
+
+/* phone call hover slide */
+.slide-left {
+  position: relative;
+  width: 10%;
+}
+
+.fa-phone {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fa-phone span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 2px;
+  right: 21px !important;
+  background-color: #1C7589;
+  overflow: hidden;
+  height: 90%;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.slide-left:hover .overlay {
+  width: 250px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  right: -39%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 @media (max-width: 576px) {
@@ -140,37 +199,39 @@ p {
   }
 }
 
+@media (max-width: 992px) {
+  .slide-left:hover .overlay {
+    width: 0;
+    right: 0;
+  }
+}
+
 /* End of Primary Menu */
-/* ******************** */
 /* Secondary Menu */
-.nav-tabs .nav-link {
-  border: 0;
-  color: #fff;
-  background: #57183D;
-  margin: 5px;
-}
-
-.nav-tabs {
-  border-bottom: 0;
-}
-
 .secondary-menu {
   background: #681D49;
   padding: 18px 13px 18px 13px;
   font-size: 13px;
 }
 
-/* .secondary-menu .nav-links1 {
-    margin-left: 25px;
-} */
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+.secondary-menu ul {
+  border-bottom: 0;
+}
+
+.secondary-menu ul a {
+  border: 0;
+  color: #fff;
+  background: #57183D;
+  margin: 5px;
+}
+
+.secondary-menu .nav-tabs .nav-item.show .nav-link, .secondary-menu .nav-tabs .nav-link {
   margin-right: 1.5rem;
   border-radius: 8px;
   padding: 3px 10px 3px 10px;
 }
 
 .toggle-button {
-  /* color: blue; */
   cursor: pointer;
   position: absolute;
   top: -0.7rem;
@@ -235,64 +296,6 @@ p {
   }
 }
 
-/* phone call hover slide */
-.slide-left {
-  position: relative;
-  width: 10%;
-}
-
-.fa-phone {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.font-call {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 2px;
-  right: 29px !important;
-  background-color: #1C7589;
-  overflow: hidden;
-  height: 90%;
-  -webkit-transition: width 2s;
-  transition: width 2s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.slide-left:hover .overlay {
-  width: 250px;
-  /* right: 0; */
-  /* z-index: 1; */
-  -webkit-transition: width 2s;
-  transition: width 2s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
-.text {
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: 15px;
-  right: -39%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-@media (max-width: 992px) {
-  .slide-left:hover .overlay {
-    width: 0;
-    right: 0;
-  }
-}
-
 /* modal when page load */
 .btn-primary {
   color: #fff;
@@ -318,12 +321,6 @@ p {
   padding: 10rem 0 19rem 0;
 }
 
-.first-tab .content-left-btm {
-  margin-bottom: 32px !important;
-  text-shadow: 2px 2px #000000;
-  font-size: 19px;
-}
-
 .first-tab .content-center {
   margin-bottom: 23px;
   margin-left: 60px;
@@ -335,29 +332,11 @@ p {
   padding: 6px;
 }
 
-.info {
-  background-color: #672349;
-  color: #fff;
-  padding: 3px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px solid #fff;
-}
-
-.info:hover {
-  background: #fff;
-  color: #672349;
-}
-
 .first-tab .content-right {
   background-color: #672349;
   border-radius: 15px 0 0 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.cr-btm {
-  font-size: 13px;
 }
 
 .modal .close {
@@ -381,21 +360,21 @@ p {
 
 @media (max-width: 575.98px) {
   .welcome-home-bg {
-    padding: 15rem 0 11rem 0rem;
+    padding: 12rem 0 10rem 0;
   }
   .first-tab {
     position: relative;
   }
-  .content-left-top .h1-1st-tab {
+  .content-left-top h1 {
     font-size: 38px;
     position: absolute;
-    top: 0rem;
-    left: 2rem;
+    top: 2.5rem;
+    left: -2rem;
   }
-  .content-left-btm .p-1st-tab {
+  .content-left-btm p {
     position: absolute;
-    top: 3rem;
-    left: 2rem;
+    top: 5.5rem;
+    left: -2rem;
     font-size: 17px;
   }
   .content-center i {
@@ -411,28 +390,28 @@ p {
   }
   .play-button {
     position: absolute;
-    top: -18.3rem;
-    left: -.8rem;
+    top: -0.6rem;
+    left: -0.6rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .welcome-home-bg {
-    padding: 15rem 0 11rem 0rem;
+    padding: 15rem 0 11rem 0;
   }
   .first-tab {
     position: relative;
   }
-  .content-left-top .h1-1st-tab {
+  .content-left-top h1 {
     font-size: 50px;
     position: absolute;
     top: 1.5rem;
-    left: -5rem;
+    left: -1rem;
   }
-  .content-left-btm .p-1st-tab {
+  .content-left-btm p {
     position: absolute;
     top: 6rem;
-    left: -5rem;
+    left: -1rem;
     font-size: 17px;
   }
   .content-center i {
@@ -442,7 +421,7 @@ p {
   }
   .content-right {
     position: absolute;
-    top: 13rem;
+    top: 12.5rem;
     border-radius: 0 !important;
     padding-left: 32px;
   }
@@ -470,10 +449,6 @@ p {
   letter-spacing: 1px;
 }
 
-.second-tab .p-2nd-tab {
-  text-shadow: 2px 2px #000000;
-}
-
 @media (max-width: 575.98px) {
   .your-options-bg {
     background-image: url("../images/options.png");
@@ -485,16 +460,16 @@ p {
   .second-tab {
     position: relative;
   }
-  .second-tab .h1-2nd-tab {
+  .second-tab h1 {
     position: absolute;
     top: 2rem;
-    left: 2rem;
+    left: -2rem;
     font-size: 38px;
   }
-  .second-tab .p-2nd-tab {
+  .second-tab .ml-5 p {
     position: absolute;
     top: 7.5rem;
-    left: 2rem;
+    left: -2rem;
     font-size: 17px;
   }
   .second-tab .content-right-2nd-tab {
@@ -507,16 +482,17 @@ p {
   .second-tab {
     position: relative;
   }
-  .h1-2nd-tab {
+  .second-tab h1 {
     position: absolute;
-    top: 5rem;
-    left: -3.7rem;
-    font-size: 37px;
+    top: 1rem;
+    left: -2rem;
+    font-size: 50px;
   }
-  .p-2nd-tab {
+  .second-tab .ml-5 p {
     position: absolute;
-    top: 8rem;
-    left: -3.7rem;
+    top: 9rem;
+    left: -1.7rem;
+    font-size: 17px;
   }
   .content-right-2nd-tab {
     position: absolute;
@@ -536,10 +512,6 @@ p {
 .third-tab .content-right-3rd-tab {
   background-color: #672349;
   border-radius: 15px 0 0 15px;
-}
-
-.p-3rd-tab {
-  text-shadow: 2px 2px #000000;
 }
 
 .third-tab .cr-btm {
@@ -564,16 +536,17 @@ p {
     top: 16rem;
     border-radius: 0;
   }
-  .h1-3rd-tab {
+  .third-tab h1 {
     position: absolute;
-    font-size: 29px;
-    top: 4rem;
-    left: 2.4rem;
+    font-size: 35px;
+    top: 3rem;
+    left: -2rem;
   }
-  .p-3rd-tab {
+  .third-tab .ml-5 p {
     position: absolute;
-    top: 10rem;
-    left: 2.4rem;
+    top: 11rem;
+    left: -2rem;
+    font-size: 17px;
   }
 }
 
@@ -594,16 +567,17 @@ p {
     top: 0rem;
     border-radius: 0;
   }
-  .h1-3rd-tab {
+  .third-tab h1 {
     position: absolute;
-    font-size: 37px;
-    top: -10rem;
-    left: 2.4rem;
+    font-size: 42px;
+    top: -12rem;
+    left: -2rem;
   }
-  .p-3rd-tab {
+  .third-tab .ml-5 p {
     position: absolute;
-    top: -4.5rem;
-    left: 2.4rem;
+    top: -4rem;
+    left: -2rem;
+    font-size: 17px;
   }
 }
 
@@ -618,14 +592,10 @@ p {
   padding-bottom: 7rem;
 }
 
-.custom-p {
-  text-shadow: 2px 2px #000000;
-}
-
 .btn-left-content {
   background: #fff;
   border-radius: 12px;
-  font-size: 13px;
+  font-size: 20px;
   color: #000000 !important;
   padding: 2px 10px;
   font-weight: bolder;
@@ -650,23 +620,23 @@ p {
   .fourth-tab {
     position: relative;
   }
-  .fourth-tab .h1-4th-tab {
+  .fourth-tab h1 {
     position: absolute;
     font-size: 26px;
-    top: -12rem;
-    left: 9rem;
+    top: -11rem;
+    left: 5rem;
   }
-  .fourth-tab .custom-p {
+  .fourth-tab .ml-5 p {
     position: absolute;
     font-size: 17px;
-    left: 9rem;
+    left: 5rem;
     top: -6.5rem;
   }
   .fourth-tab .btn-left-content {
     position: absolute;
-    font-size: 12px;
-    top: -1.5rem;
-    left: 9rem;
+    font-size: 14px;
+    top: -2.5rem;
+    left: 5rem;
     padding: 0 10px;
   }
   .fourth-tab .first-content {
@@ -677,7 +647,7 @@ p {
   }
   .fourth-tab .second-content {
     position: absolute;
-    top: 15.5rem;
+    top: 18.5rem;
     border-radius: 0;
   }
 }
@@ -689,21 +659,22 @@ p {
   .fourth-tab {
     position: relative;
   }
-  .fourth-tab .h1-4th-tab {
+  .fourth-tab h1 {
     position: absolute;
     top: -12rem;
-    left: 17rem;
+    left: 12rem;
     font-size: 37px;
   }
-  .fourth-tab .custom-p {
+  .fourth-tab .ml-5 p {
     position: absolute;
     top: -3rem;
-    left: 17rem;
+    left: 12rem;
   }
   .fourth-tab .btn-left-content {
     position: absolute;
-    top: 3rem;
-    left: 17rem;
+    top: 1rem;
+    left: 12rem;
+    font-size: 15px;
   }
   .fourth-tab .first-content {
     position: absolute;
@@ -712,12 +683,13 @@ p {
   }
   .fourth-tab .second-content {
     position: absolute;
-    top: 12.9rem;
+    top: 14.9rem;
     border-radius: 0px;
   }
 }
 
 /* End of Fourth tab Support when you need it */
+/* Carousel on Read our Testimonials */
 .bg-modal {
   background-image: url("../images/Home1.png");
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 24, 61, 0.678431)), to(rgba(87, 24, 61, 0.839216))), url("../images/Home1.png") !important;
@@ -758,7 +730,7 @@ p {
   background-image: url("../images/contact-us.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: -52rem 0;
 }
 
 .bg-5th-right {
@@ -792,6 +764,24 @@ p {
   .fifth-tab {
     position: relative;
   }
+  .fifth-tab h1 {
+    position: absolute;
+    font-size: 38px;
+    left: -2rem;
+    top: 1rem;
+  }
+  .fifth-tab p {
+    position: absolute;
+    font-size: 17px;
+    top: 7rem;
+    left: -2rem;
+  }
+  .fifth-tab .btn-left-content {
+    position: absolute;
+    top: 11rem;
+    left: -2rem;
+    font-size: 14px;
+  }
   .contact-us-bg {
     background-image: url("../images/contact-us.png");
     background-repeat: no-repeat;
@@ -814,6 +804,24 @@ p {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .fifth-tab {
     position: relative;
+  }
+  .fifth-tab h1 {
+    position: absolute;
+    font-size: 50px;
+    left: -2rem;
+    top: 1rem;
+  }
+  .fifth-tab p {
+    position: absolute;
+    font-size: 17px;
+    top: 5rem;
+    left: -2rem;
+  }
+  .fifth-tab .btn-left-content {
+    position: absolute;
+    top: 9rem;
+    left: -2rem;
+    font-size: 14px;
   }
   .contact-us-bg {
     background-image: url("../images/contact-us.png");

@@ -9,14 +9,10 @@
     padding-bottom: 7rem;
 }
 
-.custom-p {
-    text-shadow: 2px 2px #000000;
-}
-
 .btn-left-content {
     background: #fff;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: 20px;
     color: #000000 !important;
     padding: 2px 10px;
     font-weight: bolder;
@@ -42,25 +38,25 @@
         position: relative;
     }
 
-    .fourth-tab .h1-4th-tab {
+    .fourth-tab h1 {
         position: absolute;
         font-size: 26px;
-        top: -12rem;
-        left: 9rem;
+        top: -11rem;
+        left: 5rem;
     }
 
-    .fourth-tab .custom-p {
+    .fourth-tab .ml-5 p {
         position: absolute;
         font-size: 17px;
-        left: 9rem;
+        left: 5rem;
         top: -6.5rem;
     }
 
     .fourth-tab .btn-left-content {
         position: absolute;
-        font-size: 12px;
-        top: -1.5rem;
-        left: 9rem;
+        font-size: 14px;
+        top: -2.5rem;
+        left: 5rem;
         padding: 0 10px;
     }
 
@@ -73,7 +69,7 @@
 
     .fourth-tab .second-content {
         position: absolute;
-        top: 15.5rem;
+        top: 18.5rem;
         border-radius: 0;
     }
 }
@@ -86,23 +82,24 @@
         position: relative;
     }
 
-    .fourth-tab .h1-4th-tab {
+    .fourth-tab h1 {
         position: absolute;
         top: -12rem;
-        left: 17rem;
+        left: 12rem;
         font-size: 37px;
     }
 
-    .fourth-tab .custom-p {
+    .fourth-tab .ml-5 p {
         position: absolute;
         top: -3rem;
-        left: 17rem;
+        left: 12rem;
     }
 
     .fourth-tab .btn-left-content {
         position: absolute;
-        top: 3rem;
-        left: 17rem;
+        top: 1rem;
+        left: 12rem;
+        font-size: 15px;
     }
 
     .fourth-tab .first-content {
@@ -113,12 +110,13 @@
 
     .fourth-tab .second-content {
         position: absolute;
-        top: 12.9rem;
+        top: 14.9rem;
         border-radius: 0px;
     }
 }
 /* End of Fourth tab Support when you need it */
 
+/* Carousel on Read our Testimonials */
 .bg-modal {
     background-image: url("../images/Home1.png");
     background: -webkit-gradient(linear,left bottom,left top,from(rgba(87,24,61,.678431)),to(rgba(87,24,61,.839216))),url("../images/Home1.png")!important;
