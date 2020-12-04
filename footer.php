@@ -24,7 +24,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       <div class="modal-body bg-modal">
-        <h1 class="tab4-h1">
+        <h1 class="d-flex justify-content-center tab4-h1">
         What our clients say ...
         </h1>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -61,15 +61,13 @@
           </div>
           <h1 class="h1-modal">Home Instead.</h1>
         </div>
-          <!-- <img style="width: 300px;" src="https://brochure.homeinstead.com.au/wp-content/uploads/2020/10/HomeInstead_white.png"> -->
-          <!-- <img src = '<?php //bloginfo('template_directory'); ?>/assets/images/logo.png' alt = 'Picture' /> -->
     </div>
   </div>
 </div>
 <!-- Modal and Carousel Support when you need it Tab 4 -->
 
 <!-- Show Modal on Page Load -->
-<!-- <div class="modal" tabindex="-1" role="dialog" id="myModal">
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content pl-3 mt-5">
       <div class="modal-header">
@@ -79,17 +77,16 @@
           This site uses cookies
         </h4>
         <p>
-          This website uses cookies to ensure you get the best experience on the Home Instead Digital Brochure. For more information, click 
-          <a href="https://homeinstead.com.au/" style="color: black"><strong><em> here </em></strong></a>
+          This website uses cookies to give you the best audio and visual experience of the Home Instead Digital Brochure.
         </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary play" data-dismiss="modal">Agree</button>
-        <button type="button" class="btn btn-secondary play" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary play" id="button-api" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <!-- End of Show Modal on Page Load -->
 
 <?php

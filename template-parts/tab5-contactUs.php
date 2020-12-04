@@ -14,10 +14,20 @@
             <div class="col-sm-12 col-md-4 bg-5th-right rc-5th">
                 <h3 class="mt-5">Find your local office</h3>
                 <input type="text" class="form-control" id="inputGetPostCode" placeholder="Post code where care is needed">
+                <!-- <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+                <div class="lds-hourglass"></div>
                 <div id="postCodeMarker" class="mt-5"> 
                     <div class="row bg-primary py-2 px-2 text-white rounded-0 postcode-details">
                         <div class="col-sm-12 mb-3">
-                            <h4><i class="fas fa-map-marker-alt" aria-hidden="true"></i> National Office Contact Info</h4>
+                            <h4>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span id="national">National Office Contact Info</span> 
+                            </h4>
                         </div>
                         <div class="col-sm-6">
                             <a href="tel:1300 008 018" class="btn btn-light"><i class="fas fa-phone" aria-hidden="true"></i> 1300 008 018</a>

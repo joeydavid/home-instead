@@ -184,7 +184,6 @@ body {
     text-align: center;
   }
   .navbar-links li a {
-    padding: 3px 10px !important;
     padding: .5rem 1rem;
     margin: .05rem;
   }
@@ -647,7 +646,7 @@ body {
   }
   .fourth-tab .second-content {
     position: absolute;
-    top: 18.5rem;
+    top: 17.5rem;
     border-radius: 0;
   }
 }
@@ -680,6 +679,7 @@ body {
     position: absolute;
     top: 7rem;
     border-radius: 0px;
+    padding-bottom: 6rem;
   }
   .fourth-tab .second-content {
     position: absolute;
@@ -693,6 +693,7 @@ body {
 .bg-modal {
   background-image: url("../images/Home1.png");
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(87, 24, 61, 0.678431)), to(rgba(87, 24, 61, 0.839216))), url("../images/Home1.png") !important;
+  padding: 5rem 0 5rem 0;
 }
 
 .carousel-inner {
@@ -706,8 +707,6 @@ body {
 }
 
 .tab4-h1 {
-  margin-top: 17rem;
-  margin-left: 19rem;
   font-size: 60px;
   color: #fff;
   text-shadow: none;
@@ -723,6 +722,21 @@ body {
 .h1-modal {
   color: #fff !important;
   text-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .tab4-h1 {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+  }
+  .carousel-inner {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 50px;
+    padding: 105px 70px;
+    font-size: 20px;
+  }
 }
 
 /* Start of Fifth tab Contact Us */
@@ -843,4 +857,63 @@ body {
 }
 
 /* End of Fifth tab Contact Us */
+.lds-hourglass {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 32px solid #681d49;
+  border-color: #681d49 transparent #681d49 transparent;
+  -webkit-animation: lds-hourglass 1.2s infinite;
+          animation: lds-hourglass 1.2s infinite;
+}
+
+@-webkit-keyframes lds-hourglass {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg);
+  }
+}
+
+@keyframes lds-hourglass {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg);
+  }
+}
 /*# sourceMappingURL=main.css.map */

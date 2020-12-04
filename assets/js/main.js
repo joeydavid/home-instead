@@ -7,7 +7,7 @@ function include(file) {
     document.getElementsByTagName('head').item(0).appendChild(script);
 } 
 include('/home-instead/wp-content/themes/homeinstead/assets/js/audio.js');
-include('/home-instead/wp-content/themes/homeinstead/assets/js/slide.js');
+include('/home-instead/wp-content/themes/homeinstead/assets/js/api.js');
 
 //Show modal on Page Load
 $(window).on('load',function(){

@@ -28,13 +28,13 @@
           <a href="tel:1300 008 018" class="btn navbar__btn-phonecall">
             <i class="fa fa-phone"></i>
           </a>
-            <div class="overlay">
-              <div class="text">
-                <i class="fa fa-phone">
-                  <span class="ml-2">Talk to a real person | 1300 008 018</span>
-                </i>
-              </div>
+          <div class="overlay">
+            <div class="text">
+              <i class="fa fa-phone">
+                <span class="ml-2">Talk to a real person | 1300 008 018</span>
+              </i>
             </div>
+          </div>
         </li>
         <li>
           <a class="btn navbar__btn-subs" href="https://homeinstead.com.au/senior-care-connections/">Subscribe</a>
