@@ -1,7 +1,7 @@
 //Audio Autoplay
 $(document).ready(function() {
     // 1.Welcome Home
-    $('.play').click(function() {
+    $('.home-tab-play').click(function() {
         var audio = document.getElementById("welcomeAudio");
 		audio.play();
     });

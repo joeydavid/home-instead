@@ -12,7 +12,7 @@
                 <div class="navbar-links1">
                     <ul class="nav nav-tabs float-right" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active play" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                            <a class="nav-link active play home-tab-play" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                 1. Welcome Home
                             </a>
                         </li>

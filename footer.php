@@ -8,7 +8,7 @@
           <span class="float-right" aria-hidden="true">&times;</span>
         </button>
       <div class="modal-body">
-        <iframe style="height: 600px; width: 100%; border: 0;" id="cartoonVideo" class="embed-responsive-item" src="https://player.vimeo.com/video/476096397?badge=0?amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;autoplay=1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true">
+        <iframe style="height: 600px; width: 100%; border: 0;" id="cartoonVideo" class="embed-responsive-item" src="https://player.vimeo.com/video/476096397?badge=0?amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;?rel=0&autoplay=1" allow="autoplay 'src'; fullscreen">
         </iframe>
       </div>
     </div>
@@ -81,8 +81,8 @@
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary play" data-dismiss="modal">Agree</button>
-        <button type="button" class="btn btn-secondary play" id="button-api" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary home-tab-play" data-dismiss="modal">Agree</button>
+        <button type="button" class="btn btn-secondary home-tab-play" id="button-api" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

@@ -107,7 +107,7 @@
         position: absolute;
         top: 6rem;
         left: -1rem;
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .content-center i {
@@ -128,4 +128,28 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .welcome-home-bg {
+        padding: 0rem 0 2rem 0;
+    }
+
+    .content-left-top h1 {
+        font-size: 60px;
+    }
+
+    .content-left-btm p {
+        // top: 6rem;
+        // left: -1rem;
+        font-size: 19px;
+    }
+
+    .content-right {
+        top: 1.5rem;
+        padding-left: 15px;
+    }
+
+    // .offset-sm-1 {
+    //     margin-left: 2.3%;
+    // }
+}
 /* End of first Tab Welcome Home */

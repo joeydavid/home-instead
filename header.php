@@ -18,7 +18,7 @@
       <?php if ( has_custom_logo() ) : ?>
         <span class="site-logo"><?php the_custom_logo(); ?></span>
       <?php else: ?>
-        <a class="navbar-brand" href="home_url('/')">get_bloginfo('name', 'display')</a>
+        <a class="navbar-brand" href="#">get_bloginfo('name', 'display');</a>
       <?php endif; ?>
     </a>
   </div>

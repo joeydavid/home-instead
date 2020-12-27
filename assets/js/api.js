@@ -1,4 +1,5 @@
 $(function() {
+    
     var markup = `<div id="postCodeMarker" class="mt-5"> 
                     <div class="row bg-primary py-2 px-2 text-white rounded-0 postcode-details">
                         <div class="col-sm-12 mb-3">
@@ -23,7 +24,7 @@ $(function() {
 
     $("#inputGetPostCode").on("change",function(){
 
-    $(".lds-hourglass").show();
+    $(".lds-ellipsis").show();
     $("#postCodeMarker").html("");
 
     $.getJSON("https://homeinstead.com.au/wp-json/postcode/"+$(this).val(), function(data){
@@ -49,18 +50,19 @@ $(function() {
         if ($("#inputGetPostCode").val() == 0) { 
             // console.log("#inputGetPostCode");
             $("#postCodeMarker").append(markup);
-            $(".lds-hourglass").hide();
+            $(".lds-ellipsis").hide();
+            // alert("Post code must be 4 numbers!");
             return false;
         } else {
             $("#postCodeMarker").append(markup1);
-            $(".lds-hourglass").hide();
+            $(".lds-ellipsis").hide();
             return true;
         }
         })
         .fail(function() {
             // $("#postCodeMarker").html("");
             $("#postCodeMarker").append(markup);
-            $(".lds-hourglass").hide();
+            $(".lds-ellipsis").hide();
         })
     })
 });

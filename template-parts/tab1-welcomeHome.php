@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 pb-4">
+                <div class="col-sm-12 pb-4 videoClickPlay">
                     <a href="#" class="btn btn-outline-light ml-4 play-button" id="playerIcon" data-toggle="modal" data-target="#exampleModalCenter">
                         <i class="fas fa-play-circle" aria-hidden="true"></i> Watch Stanley’s Story
                     </a>
@@ -39,7 +39,7 @@
 <!-- End of Welcome Home -->
 
 <!-- Audio -->
-<audio autoplay class="audioPlayer" id="welcomeAudio">
+<audio autoplay loop class="audioPlayer" id="welcomeAudio">
     <source src="https://brochure.homeinstead.com.au/wp-content/uploads/2020/11/Page-1-Welcome-Home.webm" type="audio/webm">
     <source src="https://brochure.homeinstead.com.au/wp-content/uploads/2020/11/Page-1-Welcome-Home.ogg" type="audio/ogg">
     Your browser does not support the audio element.

@@ -14,13 +14,12 @@
             <div class="col-sm-12 col-md-4 bg-5th-right rc-5th">
                 <h3 class="mt-5">Find your local office</h3>
                 <input type="text" class="form-control" id="inputGetPostCode" placeholder="Post code where care is needed">
-                <!-- <div class="lds-ellipsis">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> -->
-                <div class="lds-hourglass"></div>
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 <div id="postCodeMarker" class="mt-5"> 
                     <div class="row bg-primary py-2 px-2 text-white rounded-0 postcode-details">
                         <div class="col-sm-12 mb-3">
@@ -46,7 +45,8 @@
                 <span>
                     Someone from the your local office will call shortly. Care and a helping hand is just phone call away.
                 </span>
-                <div class="form-row mt-5">
+                <?= do_shortcode('[contact-form-7 id="24" title="Contact form 1"]') ?>
+                <!-- <div class="form-row mt-5">
                     <div class="form-group col-md-6">
                         <label> First name <i class="text-danger">*</i>
                             <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false">
@@ -159,7 +159,7 @@
                         <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit form-control btn btn-primary btn-send">
                         <span class="ajax-loader"></span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
