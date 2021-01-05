@@ -21,9 +21,9 @@ toggleButton.addEventListener('click' , () => {
 });
 
 //Video on Tab 1 will autoplay when button clicked
-$(".videoClickPlay").click(function(){
-    $("#cartoonVideo")[0].src += "?autoplay=1";
-});
+// $(".videoClickPlay").click(function(){
+//     $("#cartoonVideo")[0].src += "?autoplay=1";
+// });
 
 
 
